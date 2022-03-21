@@ -1,0 +1,386 @@
+/*Info about the author 
+name: Artis Korsītis
+student ID number: ak20015
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@font-face{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+body{
+   font-family: 'Roboto', sans-serif;
+   font-size: 14px;
+   min-width: 1500px;
+}
+.menu{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(14, 2, 35, 0.8);
+    position: fixed;
+    font-weight: bold;
+    z-index: 1;
+}
+.parent-menu{
+    padding-top: 24px;
+    padding-left: 25px;
+}
+.upper-menu{
+    float: left;
+}
+.parent-menu a{
+    text-decoration: none;
+    color: white;
+    padding-left: 40px;
+}
+.parent-menu a:hover{
+    color: rgb(242, 177, 26);
+}  
+.parent-menu > li{
+    color: rgba(255,255,255,0.7);
+    display: inline-block;
+    padding-top: 4px;
+}
+.parent-menu li:first-child{
+    color: rgb(242,177,26);
+}   
+.sub-menu-caption{
+    position: relative;
+    display: inline-block;
+}  
+.sub-menu{
+    background-color: rgb(14, 2, 35);
+    width: 300%;
+    height: 160px;
+    display: none;
+    position: absolute;
+    left: -21px;
+}    
+.sub-menu-caption:hover .sub-menu{
+    display: block;
+}
+.sub-menu-caption:hover{
+    cursor: pointer;
+}
+.sub-menu li{
+    border-top: none;
+    padding-left: 0px;
+    padding-top: 20px;
+    font-size: 0.9em;
+}
+.upper-menu{
+      font-size: 1.2em;
+}
+.collapse{
+    display: none;
+}
+.sub-menu-caption:hover .collapse{
+    display: inline-block;
+}
+.expand{
+    display: inline-block;
+}
+.sub-menu-caption:hover .expand {
+    display: none;
+}
+.upper-menu .btn{
+    position: absolute;
+    box-sizing: content-box;
+    text-align: center;
+    width: 80px;
+    height: 20px;
+    top: 25px;
+    right: 40px;
+    padding: 0px;
+    border: white  1px solid;
+    border-radius: 32px;
+    background-color: rgba(242, 213, 26, 0.8);
+}
+.upper-menu .btn:hover{
+    color:white;
+    background-color: rgb(242, 213, 26);
+}
+.header{
+    background-image: url("../images/topimage.jpeg");
+    overflow: hidden;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+.header .bg-overlay {
+    display: block;
+    background-color: rgba(14, 2, 35, 0.5);
+    width: 100%;   
+}
+.title h1{
+    font-size: 72px;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 500px;
+    margin-right: 20px;
+}
+.meta ul{
+    text-align: right;
+    margin-top: 90px;
+    margin-right: 20px;
+}
+.meta ul li{
+    color: white;
+    border: 1px solid white;
+    font-weight: bold;
+}
+.meta ul li{
+    display: inline-flex;
+    height: 45px;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 24px;
+}
+.meta ul li span{
+    background: rgba(242, 213, 26, 0.8);
+    height: 47px;
+    width: 47px;
+    border-radius: 24px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.meta ul li:not(span){
+    margin:0 10px;
+}
+.social{
+    text-align: right;
+    margin-top: -640px;
+    margin-right: 20px;
+    float: right;
+    display: inline-flex;
+}
+.social h5{
+    margin-top: 22px;
+    margin-right: 8px;
+    color: white;
+    opacity: 0.8;
+    font-weight: bold;
+    font-size: 18px;
+}
+.social a img{
+    margin-top: 15px;
+    height: 30px;
+    opacity: 0.6;
+}
+.social a img:hover{
+    opacity: 1.0;
+}
+.section-summary h2{
+    margin-top: 80px;
+    color: black;
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.section-summary p{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: rgb(132, 132, 132);
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+.add span{
+    font-style: italic;
+}
+.section-cast{
+    background-image: url("../images/car.jpg");
+    overflow: hidden;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    min-height: 680px;
+}
+.section-cast .bg-overlay {
+    display: block;
+    background-color: rgba(14, 2, 35, 0.5);
+    width: 100%;   
+}
+.section-cast .line{
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    border-bottom: 2px solid white;
+    width: 30px; 
+}
+.section-cast h4{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.section-cast ul{
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    position: relative;
+}
+.section-cast img{
+    height: 447px;
+    position: relative;
+}
+.section-cast .cast-head{
+    position: absolute;
+    background-color: rgba(242, 213, 26, 0.8);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+    top: 60px;
+}
+.section-cast .cast-text{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 252px;
+    height: 55px;
+    bottom: 50px;
+    padding-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(132, 132, 132);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.section-cast .cast-text h5{
+    text-align: center;
+    color: rgb(42, 42, 42);
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.section-cast .cast-text:hover{
+    background-color: rgb(242, 213, 26);
+    opacity: 1.0;
+}
+.section-trailer{
+    height: 100vh;
+    min-height: 950px;
+}
+.section-trailer h2{
+    color: black;
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 35px;
+}
+.section-trailer ul{
+    display: flex;
+    justify-content: center;
+}
+.section-trailer iframe{
+    height: 700px;
+    width: 1200px;
+    margin-top: 20px;
+}
+.section-trailer ul ul{
+    display: block;
+    text-align: center;
+}
+.section-trailer ul > li{
+    padding: 10px;
+    margin-top: 10px;
+}
+.section-trailer li a:last-child{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+.section-tickets{
+    background-image: url("../images/cinema.png");
+    overflow: hidden;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    height: 40vh;
+}
+.section-tickets .bg-overlay{
+    display: block;
+    background-color: rgba(14, 2, 35, 0.5);
+    width: 100%;  
+}
+.section-tickets .line{
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    border-bottom: 2px solid white;
+    width: 30px; 
+}
+.section-tickets h4{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+.section-tickets .btn{
+    display: block;
+    width: 135px;
+    height: 15px;
+    background: rgba(242, 213, 26, 0.8);
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 32px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.section-tickets .btn:hover{
+    color:white;
+    background-color: rgb(242, 213, 26);
+}
+.section-footer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.section-footer ul li{
+    display: inline;
+}
+.section-footer > ul > li:not(:last-child){
+    border-right: 1px solid;
+    border-color: rgb(181, 181, 181);
+}
+.section-footer li a{
+    padding: 7px;
+}
+.section-footer ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(136, 136, 136);
+}
+.section-footer ul li a:hover{
+    color: black;
+    text-decoration: underline;
+}
